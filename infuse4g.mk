@@ -200,6 +200,9 @@ include frameworks/native/build/phone-hdpi-512-dalvik-heap.mk
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+PRODUCT_COPY_FILES += \
+    device/samsung/aries-common/updater.sh:updater.sh
+
 # zram
 PRODUCT_COPY_FILES += \
     device/samsung/infuse4g/zram.sh:root/sbin/zram.sh
